@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700')
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
+// variables colors
+$color-one: #EAE8DA		//white
+$color-two: #509B9E		//blue
+$color-three: #D04B22 	//orange
+// variables breakpoints
+$bp-small: 	'(min-width: 320px)'
+$bp-medium: '(min-width: 1024px)'
+$bp-large: 	'(min-width: 1280px)'
+$bp-xlarge: 	'(min-width: 1480px)'
+
+
+*
+	border: 0
+	box-sizing: border-box
+	color: #000
+	list-style: none
+	margin: 0
+	padding: 0
+	position: relative
+	text-decoration: none
+
+body
+	background: $color-one
+	font-family: 'Oswald', sans-serif
+	font-size: 16px
+.wrapper
+	margin: 0 calc(50% - 90%/2)
+	max-width: 1280px
+
+// ****---- INDEX
+.head__index
+	margin: 0 auto
+	@media #{$bp-medium}
+		float: left
+		max-width: 600px
+.brand
+	margin: 50px
+	@media #{$bp-medium}
+		margin: 125px 50px
+		max-width: 570px
+	img
+		margin: 0 auto
+		width: 100%
+.main__index
+	@media #{$bp-medium}
+		float: right
+		margin: 0
+		width: 400px
+.block--orange, .block--blue
+	@media #{$bp-medium}
+		margin: 0
+		width: 200px
+.block--orange, .block--blue
+	margin: 0
+	nav ul li
+		text-align: center
+		a
+			color: $color-three
+			font-size: 1.6em
+			line-height: 1.8em
+			text-transform: uppercase
+			@media #{$bp-medium}
+				color: $color-one
+				cursor: pointer
+				&:hover
+					color: #fff
+	@media #{$bp-medium}
+		float: left
+		padding: calc(50vh - 185px/2) 0
+		background: $color-three
+.block--blue
+	@media #{$bp-medium}
+		float: right
+		padding: calc(50vh - 1px/2) 0
+		background: $color-two
+	.brand__camera
+		display: none
+		// padding: calc(50vh - 1px/2) 0
+		@media #{$bp-medium}
+			display: block
+			&:before
+				content: url(../images/icon-camera.png)
+				position: absolute
+				left: calc(50% - 60px/2)
+.social
+	margin: 40px calc(50% - 130px/2) 20px
+	width: 130px
+	.address-social
+		a
+			color: $color-two
+			text-align: center
+			font-family: 'Lato', sans-serif
+			font-weight: 300
+	@media #{$bp-medium}
+		clear: both
+		position: absolute
+		top: calc(100vh - 230px/2)
+		margin: 0
+		left: 80px
+.icon-social
+	display: inline-block
+	padding: 10px
+	margin: 25px 6px 10px
+
+// ****---- BIO
+.head__default
+	margin: 0
+	height: 0
+	transition: all .6s ease-in
+.menu-hamburguer
+	display: block
+	position: relative
+	z-index: 9999
+	&:before
+		content: url(../images/icon-menu.png)
+		position: absolute
+		right: 25px
+		top: 25px
+.menu
+	background: $color-three
+	position: relative
+	text-align: center
+	transform: translateY(-300px)
+	transition: all .8s ease-in-out
+	width: 100%
+	z-index: 1
+	ul
+		padding: 30px 0
+	ul li
+		height: 40px
+	ul li a
+		color: $color-one
+		font-size: 1.3em
+		height: 3em
+		text-transform: uppercase
+	.close
+		color: $color-one
+		font-family: 'Lato', sans-serif
+		font-weight: 300
+		padding: 0 6px 4px
+		width: 10px
+		img
+			cursor: pointer
+			width: 30px
+.head__default.active
+	height: 200px
+.menu.active
+	transform: translateY(0px)
+.bio,.contato
+	position: relative
+	@media #{$bp-medium}
+		clear: both
+	.profile-bio
+		border-radius: 50%
+		max-height: 260px
+		max-width: 260px
+		overflow: hidden
+		margin: 70px calc(50% - 260px/2) 35px
+		@media #{$bp-medium}
+			border-radius: 0
+			float: left
+			max-width: 510px
+			max-height: 100%
+			margin: 0
+		img
+			display: block
+			width: 120%
+			@media #{$bp-medium}
+				width: 100%
+	.description-bio
+		margin: 25px calc(50vw - 90%/2)
+		width: 90%
+		@media #{$bp-medium}
+			float: left
+			max-width: 450px
+			margin: 50px 0 0 40px
+			width: 100%
+		@media #{$bp-large}
+			max-width: 670px
+		@media #{$bp-xlarge}
+			max-width: 800px
+		h1,h2
+			text-transform: uppercase
+		.main-title
+			color: $color-two
+			font-size: 2.4em
+		h2
+			color: $color-three
+		h3
+			color: #A0B3B4
+			font-weight: 100
+		p
+			color: #2C787B
+			font-family: 'Lato', sans-serif
+			font-size: 0.95em
+			font-weight: 300
+			margin: 25px auto
+			width: 100%
+			@media #{$bp-medium}
+				font-size: 0.72em
+			@media #{$bp-large}
+				font-size: 0.85em
+	.social-bio
+		margin: 0 calc(50% - 200px/2)
+		a
+			color: $color-two
+			font-family: 'Lato', sans-serif
+		@media #{$bp-medium}
+			float: left
+			height: 45px
+			margin: 0 0 0 40px
+			width: 400px
+			.address-social
+					float: left
+					margin-top: 10px
+					a
+						color: $color-two
+						font-family: 'Lato', sans-serif
+						font-weight: 300
+			.icon-social
+				float: right
+				margin-top: 0
+// ****---- PORTFOLIO
+.portfolio
+	margin: 2em 0
+.portfolio .main-title
+	margin: 0 30px 20px!important
+	@media #{$bp-medium}
+		width: 350px !important
+.social-portfolio
+	clear: both
+	text-align: center
+	@media #{$bp-medium}
+		margin: 2em
+	.address-social
+		clear: both
+		@media #{$bp-medium}
+			float: left
+			margin-top: 40px
+	.icon-social
+		@media #{$bp-medium}
+			float: right
+			margin: 6px
+	a
+		color: $color-two
+		font-family: 'Lato', sans-serif
+.slick-slide
+	max-height: 220px
+	@media #{$bp-medium}
+		background: transparent
+		max-height: 100%
+	@media #{$bp-xlarge}
+		max-height: 1000px
+.slick-prev
+	left: 15px
+	z-index: 1
+.slick-next
+	right: 15px
+	z-index: 1
+.item-img
+	position: relative
+	max-width: 300px
+	@media #{$bp-medium}
+		max-width: 100%
+	img
+		width: 100%
+		@media #{$bp-medium}
+			max-width: 100%
+			width: 100%
+.item-txt
+	background-color: #000
+	height: 100%
+	display: none !important
+	box-sizing: border-box !important
+	@media #{$bp-medium}
+		display: block !important
+		height: 466px
+		padding: 1em 0
+		@media #{$bp-large}
+			height: 612px
+		@media #{$bp-xlarge}
+			height: 1000px
+	h2
+		color: $color-one
+		margin: 0.5em 0 0 3em
+	p
+		color: $color-two
+		font-size: 1.1em
+		line-height: 1.5em
+		margin-left: 3.8em
+		width: 85%
+// ****---- PROJETOS
+.menu--white
+	&:before
+		content: url(../images/icon-menu--white.png)
+.wrapper-projects .main-title
+		color: $color-two
+		display: block
+		font-size: 2.4em
+		text-transform: uppercase
+.projects
+	.block--blue
+		clear: both
+		@media #{$bp-medium}
+			clear: none
+			float: right
+			padding: calc(50vh - 205px/2) 0
+		nav ul li a
+			font-size: 1.2em
+	.block--orange
+		float: right
+		.brand__camera
+		display: none
+		padding: calc(50vh - 1px/2) 0
+		@media #{$bp-medium}
+			display: block
+			&:before
+				content: url(../images/icon-camera.png)
+				position: absolute
+				left: calc(50% - 60px/2)
+.sliders
+	float: left
+	margin: 20px auto
+	height: 80px
+	width: 300px
+	@media #{$bp-medium}
+		margin: 25px 50px
+		height: 350px
+		width: 400px
+	@media #{$bp-large}
+		margin: 25px 50px
+		height: 550px
+		width: 600px
+	@media #{$bp-xlarge}
+		margin: 25px 0
+		height: 800px
+		width: 1000px
+	.item-slide
+		display: none
+		@media #{$bp-medium}
+			display: block
+			height: 95%
+			width: 100%
+		.single-item
+			clear: both
+			.item article
+				display: block
+				background-color: #FFF
+				background-repeat: no-repeat
+				background-position: center
+				background-size: cover
+				height: 400px
+				width: 100%
+				span
+					background-color: rgba(0,0,0, 1)
+					color: $color-one
+					display: block
+					font-size: 3em
+					text-transform: uppercase
+					height: 100%
+					width: 100%
+					position: relative
+					&:before
+						position: absolute
+						width: 100%
+						text-align: center
+						top: calc(50% - 75px/2)
+				&[data-project="age"]
+					background-image: url(../images/projetos/age/bg.jpg)
+					& span:before
+						content: 'Age'
+				&[data-project="natura"]
+					background-image: url(../)
+					& span:before
+						content: 'Natura'
+				&[data-project="peixes"]
+					background-image: url(../images/projetos/peixes/bg.jpg)
+					& span:before
+						content: 'Peixes'
+				&[data-project="orquideas"]
+					background-image: url(../images/projetos/orquideas/bg.jpg)
+					& span:before
+						content: 'Orquídeas'
+				&[data-project="caretas"]
+					background-image: url(../images/projetos/caretas/bg.jpg)
+					& span:before
+						content: 'Caretas'
+				&[data-project="viagens"]
+					background-image: url(../images/projetos/viagens/bg.jpg)
+					& span:before
+						content: 'Viagens'
+				&[data-project="folclore"]
+					background-image: url(../images/projetos/folclore/bg.jpg)
+					& span:before
+						content: 'Festas Folclóricas'
+// ****---- CONTATO
+.contato,.portfolio
+	margin-top: 20px
+	.main-title
+		color: $color-two
+		font-size: 2.4em
+		text-transform: uppercase
+		margin: 25px 10px
+		width: 160px
+		@media #{$bp-medium}
+			margin: 50px
+			display: inline-block
+	h2
+		color: $color-three
+		text-transform: uppercase
+		padding-bottom: 20px
+	.wrapper
+		margin: 75px calc(50% - 300px/2)
+		p
+			color: $color-two
+			font-size: 1.2em
+			line-height: 2em
+			span
+				color: $color-three
+			a
+				color: $color-two
+	.social-contato
+		text-align: center
+		@media #{$bp-medium}
+			margin-top: 140px
+		a
+			color: $color-two
+			font-family: 'Lato', sans-serif
