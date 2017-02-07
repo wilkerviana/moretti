@@ -8,10 +8,14 @@ $(document).ready(function() {
 	$('.multiple-item').slick({
   	dots: true,
 	  infinite: true,
+	  draggable: false,
+	  acessibility: true,
 	  speed: 600,
 	  cssEase: 'ease-in',
-	  centerMode: true,
 	  slidesToShow: 1,
  	 	slidesToScroll: 1
+  });
+  $('.multiple-item').on('click', function(event) {
+  	$(this).focus();
   });
 });

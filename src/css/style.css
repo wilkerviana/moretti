@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 * {
@@ -296,33 +295,11 @@ body {
     @media (min-width: 1024px) {
       .item-img img {
         max-width: 100%;
+        max-height: 520px;
         width: 100%; } }
 
-.item-txt {
-  background-color: #000;
-  height: 100%;
-  display: none !important;
-  box-sizing: border-box !important; }
-  @media (min-width: 1024px) {
-    .item-txt {
-      display: block !important;
-      height: 466px;
-      padding: 1em 0; } }
-  @media (min-width: 1024px) and (min-width: 1280px) {
-    .item-txt {
-      height: 612px; } }
-  @media (min-width: 1024px) and (min-width: 1480px) {
-    .item-txt {
-      height: 1000px; } }
-  .item-txt h2 {
-    color: #EAE8DA;
-    margin: 0.5em 0 0 3em; }
-  .item-txt p {
-    color: #509B9E;
-    font-size: 1.1em;
-    line-height: 1.5em;
-    margin-left: 3.8em;
-    width: 85%; }
+.item-img:focus {
+  border: none; }
 
 .menu--white:before {
   content: url(../images/icon-menu--white.png); }
@@ -375,65 +352,6 @@ body {
       margin: 25px 0;
       height: 800px;
       width: 1000px; } }
-  .sliders .item-slide {
-    display: none; }
-    @media (min-width: 1024px) {
-      .sliders .item-slide {
-        display: block;
-        height: 95%;
-        width: 100%; } }
-    .sliders .item-slide .single-item {
-      clear: both; }
-      .sliders .item-slide .single-item .item article {
-        display: block;
-        background-color: #FFF;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 400px;
-        width: 100%; }
-        .sliders .item-slide .single-item .item article span {
-          background-color: black;
-          color: #EAE8DA;
-          display: block;
-          font-size: 3em;
-          text-transform: uppercase;
-          height: 100%;
-          width: 100%;
-          position: relative; }
-          .sliders .item-slide .single-item .item article span:before {
-            position: absolute;
-            width: 100%;
-            text-align: center;
-            top: calc(50% - 75px/2); }
-        .sliders .item-slide .single-item .item article[data-project="age"] {
-          background-image: url(../images/projetos/age/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="age"] span:before {
-            content: 'Age'; }
-        .sliders .item-slide .single-item .item article[data-project="natura"] {
-          background-image: url(../); }
-          .sliders .item-slide .single-item .item article[data-project="natura"] span:before {
-            content: 'Natura'; }
-        .sliders .item-slide .single-item .item article[data-project="peixes"] {
-          background-image: url(../images/projetos/peixes/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="peixes"] span:before {
-            content: 'Peixes'; }
-        .sliders .item-slide .single-item .item article[data-project="orquideas"] {
-          background-image: url(../images/projetos/orquideas/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="orquideas"] span:before {
-            content: 'Orquídeas'; }
-        .sliders .item-slide .single-item .item article[data-project="caretas"] {
-          background-image: url(../images/projetos/caretas/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="caretas"] span:before {
-            content: 'Caretas'; }
-        .sliders .item-slide .single-item .item article[data-project="viagens"] {
-          background-image: url(../images/projetos/viagens/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="viagens"] span:before {
-            content: 'Viagens'; }
-        .sliders .item-slide .single-item .item article[data-project="folclore"] {
-          background-image: url(../images/projetos/folclore/bg.jpg); }
-          .sliders .item-slide .single-item .item article[data-project="folclore"] span:before {
-            content: 'Festas Folclóricas'; }
 
 .contato, .portfolio {
   margin-top: 20px; }

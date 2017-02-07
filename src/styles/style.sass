@@ -268,29 +268,10 @@ body
 		width: 100%
 		@media #{$bp-medium}
 			max-width: 100%
+			max-height: 520px
 			width: 100%
-.item-txt
-	background-color: #000
-	height: 100%
-	display: none !important
-	box-sizing: border-box !important
-	@media #{$bp-medium}
-		display: block !important
-		height: 466px
-		padding: 1em 0
-		@media #{$bp-large}
-			height: 612px
-		@media #{$bp-xlarge}
-			height: 1000px
-	h2
-		color: $color-one
-		margin: 0.5em 0 0 3em
-	p
-		color: $color-two
-		font-size: 1.1em
-		line-height: 1.5em
-		margin-left: 3.8em
-		width: 85%
+.item-img:focus
+	border: none
 // ****---- PROJETOS
 .menu--white
 	&:before
@@ -337,64 +318,7 @@ body
 		margin: 25px 0
 		height: 800px
 		width: 1000px
-	.item-slide
-		display: none
-		@media #{$bp-medium}
-			display: block
-			height: 95%
-			width: 100%
-		.single-item
-			clear: both
-			.item article
-				display: block
-				background-color: #FFF
-				background-repeat: no-repeat
-				background-position: center
-				background-size: cover
-				height: 400px
-				width: 100%
-				span
-					background-color: rgba(0,0,0, 1)
-					color: $color-one
-					display: block
-					font-size: 3em
-					text-transform: uppercase
-					height: 100%
-					width: 100%
-					position: relative
-					&:before
-						position: absolute
-						width: 100%
-						text-align: center
-						top: calc(50% - 75px/2)
-				&[data-project="age"]
-					background-image: url(../images/projetos/age/bg.jpg)
-					& span:before
-						content: 'Age'
-				&[data-project="natura"]
-					background-image: url(../)
-					& span:before
-						content: 'Natura'
-				&[data-project="peixes"]
-					background-image: url(../images/projetos/peixes/bg.jpg)
-					& span:before
-						content: 'Peixes'
-				&[data-project="orquideas"]
-					background-image: url(../images/projetos/orquideas/bg.jpg)
-					& span:before
-						content: 'Orquídeas'
-				&[data-project="caretas"]
-					background-image: url(../images/projetos/caretas/bg.jpg)
-					& span:before
-						content: 'Caretas'
-				&[data-project="viagens"]
-					background-image: url(../images/projetos/viagens/bg.jpg)
-					& span:before
-						content: 'Viagens'
-				&[data-project="folclore"]
-					background-image: url(../images/projetos/folclore/bg.jpg)
-					& span:before
-						content: 'Festas Folclóricas'
+
 // ****---- CONTATO
 .contato,.portfolio
 	margin-top: 20px
